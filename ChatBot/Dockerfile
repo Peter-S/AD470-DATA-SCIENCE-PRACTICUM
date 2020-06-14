@@ -1,5 +1,5 @@
 FROM python:3.8.0
-FROM tensorflow/tensorflow:1.14.0-py3
+FROM tensorflow/tensorflow:1.15.2-py3
 
 WORKDIR /application
 
