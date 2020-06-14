@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+</head>
+<body>
+  <h1>IT Help ChatBot</h1>
+  <div style="margin-left: 10px;">
+  <p>This is a ChatBot school project that answers simple IT questions.<br>
+    This project utilzes tflearn and tensorflow to create the ChatBot model<br>
+    The moldel is built with Flask in a Docker container and uses Python<br>
+    </p>
+  </div>
+  <p style="margin-left: 20px;">Sample statements for the ChatBot to help you with.<br>
+    - My internet is slow.<br>
+    - I erased a file.<br>
+    - What can you help me with?<br>
+    - I’m unable to log in!<br>
+    - Computer keeps shutting down</p>
+
+
+  <hr>
+  <form action="/predict" method="post">
+  <input size="60" type="text" name="question" placeholder="ask a question">
+  <br>
+  <input type="submit" value="Submit">
+  </form>
+  <hr>
+  <h3>Question: {{question}}</h3>
+  <h3>Answer: {{answer}}</h3>
+  
+</body>
+</html>
